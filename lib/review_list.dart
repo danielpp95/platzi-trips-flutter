@@ -25,6 +25,8 @@ class ReviewList extends StatelessWidget{
         title,
         Review("Experiment_626", "assets/images/wallpaper.jpg", "some detail", "some coment"),
         Review("Experiment_626", "assets/images/wallpaper.jpg", "some detail", "some coment"),
+        Review("Experiment_626", "assets/images/wallpaper.jpg", "some detail", "some coment"),
+        Review("Experiment_626", "assets/images/wallpaper.jpg", "some detail", "some coment"),
       ],
     );
   }

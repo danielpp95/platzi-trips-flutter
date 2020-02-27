@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/description_place.dart';
-import 'package:platzi_trips_app/review.dart';
+import 'package:platzi_trips_app/gradient_back.dart';
 import 'package:platzi_trips_app/review_list.dart';
 
 void main() => runApp(MyApp());
@@ -16,19 +16,17 @@ class MyApp extends StatelessWidget {
       ),
       
       home: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            "Hello Stitch!",
-            style: TextStyle(fontSize: 24),
-            textAlign: TextAlign.center),
-        ),
-
-        body: Column(
+        body: Stack(
           children: <Widget>[
-            DescriptionPlace("hola place", 3, "hola description"),
-            ReviewList()
+            ListView(
+              children: <Widget>[
+                DescriptionPlace("hola place", 3, "hola description"),
+                ReviewList()
+              ],
+            ),
+            GradientBack(),
           ],
-        )
+        ),
       )
     );
   }
