@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/description_place.dart';
+import 'package:platzi_trips_app/review.dart';
 
 void main() => runApp(MyApp());
 
@@ -21,7 +22,12 @@ class MyApp extends StatelessWidget {
             textAlign: TextAlign.center),
         ),
 
-        body: DescriptionPlace("hola place", 3, "hola description"),
+        body: Column(
+          children: <Widget>[
+            DescriptionPlace("hola place", 3, "hola description"),
+            Review("Experiment_626", "assets/images/wallpaper.jpg", "some detail", "some coment")
+          ],
+        )
       )
     );
   }

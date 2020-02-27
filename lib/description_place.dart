@@ -29,14 +29,19 @@ class DescriptionPlace extends StatelessWidget {
       ),
     );
 
-    final stars = Row(
-          children: <Widget>[
-            Star(StarsType.full, Colors.amber),
-            Star(StarsType.full, Colors.amber),
-            Star(StarsType.full, Colors.amber),
-            Star(StarsType.half, Colors.amber),
-            Star(StarsType.border, Colors.amber)
-      ],
+    final stars = Container(
+      margin: EdgeInsets.only(
+        top: 323.0
+      ),
+      child: Row(
+        children: <Widget>[
+          Star(StarsType.full, Colors.amber),
+          Star(StarsType.full, Colors.amber),
+          Star(StarsType.full, Colors.amber),
+          Star(StarsType.half, Colors.amber),
+          Star(StarsType.border, Colors.amber)
+        ],
+      ),
     );
 
     final title=  Container(

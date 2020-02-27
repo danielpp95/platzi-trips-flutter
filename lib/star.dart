@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Star extends StatelessWidget{
   StarsType type;
   MaterialColor color;
-  Star(this.type, this.color);
+  Star(this.type, this.color, );
 
   IconData icon;
 
@@ -24,7 +24,7 @@ class Star extends StatelessWidget{
 
     return Container(
       margin: EdgeInsets.only(
-          top: 323.0,
+          top: 0.0,
           right: 3.0
       ),
       child: Icon(
