@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
             textAlign: TextAlign.center),
         ),
 
-        body: DescriptionPlace(),
+        body: DescriptionPlace("hola place", 3, "hola description"),
       )
     );
   }

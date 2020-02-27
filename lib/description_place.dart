@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:platzi_trips_app/star.dart';
 
+// ignore: must_be_immutable
 class DescriptionPlace extends StatelessWidget {
+  String namePlace;
+  int stars;
+  String descriptionPlace;
+
+  DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);
+
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
 
-    final star = Container(
-      margin: EdgeInsets.only(
-        top: 323.0,
-        right: 3.0
-      ),
-      child: Icon(
-        Icons.star,
-        color: Colors.amber,
-      ),
-    );
 
     final description = Container(
       margin: EdgeInsets.only(
@@ -23,21 +20,22 @@ class DescriptionPlace extends StatelessWidget {
         top: 10.0
       ),
       child: Text(
-        "Id consequat Lorem qui dolor Lorem excepteur Lorem deserunt aliqua. Laboris ex est reprehenderit nisi pariatur aliqua irure dolor excepteur proident. Officia nostrud non adipisicing velit id non ullamco ex amet labore et et amet.",
+        descriptionPlace,
         style: TextStyle(
           fontSize: 16,
-          color: Colors.black87
+          color: Color(0xFF56575a),
+          fontFamily: "Lato"
         ),
       ),
     );
 
     final stars = Row(
           children: <Widget>[
-            star,
-            star,
-            star,
-            star,
-            star
+            Star(StarsType.full, Colors.amber),
+            Star(StarsType.full, Colors.amber),
+            Star(StarsType.full, Colors.amber),
+            Star(StarsType.half, Colors.amber),
+            Star(StarsType.border, Colors.amber)
       ],
     );
 
@@ -51,23 +49,22 @@ class DescriptionPlace extends StatelessWidget {
         "Duwili Ella",
         style: TextStyle(
             fontSize: 30.0,
-            fontWeight: FontWeight.w900
+            fontWeight: FontWeight.w900,
+          fontFamily: "Lato"
         ),
         textAlign: TextAlign.left,
       ),
     );
 
-    final full_description = Container(
-      child: Column(
+    final fullDescription = Column(
         children: <Widget>[
           Row(
           children: <Widget>[title, stars]
           ),
           description
         ],
-      ),
-    );
+      );
 
-    return full_description;
+    return fullDescription;
   }
 }
