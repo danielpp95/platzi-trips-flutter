@@ -33,7 +33,6 @@ class Star extends StatelessWidget{
       ),
     );
   }
-
 }
 
 enum StarsType {
