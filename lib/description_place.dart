@@ -51,7 +51,7 @@ class DescriptionPlace extends StatelessWidget {
         right: 20.0,
       ),
       child: Text(
-        "Duwili Ella",
+        this.namePlace,
         style: TextStyle(
             fontSize: 30.0,
             fontWeight: FontWeight.w900,

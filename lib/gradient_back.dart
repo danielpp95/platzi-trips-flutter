@@ -1,6 +1,10 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class GradientBack extends StatelessWidget {
+  String title;
+
+  GradientBack(this.title);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,6 +21,16 @@ class GradientBack extends StatelessWidget {
           tileMode: TileMode.clamp
         )
       ),
+      child: Text(
+          this.title,
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 30.0,
+            fontFamily: "Lato",
+            fontWeight: FontWeight.bold
+          )
+      ),
+        alignment: Alignment(-0.9, -0.6),
     );
   }
 
