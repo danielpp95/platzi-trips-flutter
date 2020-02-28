@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:platzi_trips_app/button_purple.dart';
 import 'package:platzi_trips_app/star.dart';
 
 // ignore: must_be_immutable
@@ -62,11 +63,13 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     final fullDescription = Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Row(
           children: <Widget>[title, stars]
           ),
-          description
+          description,
+          ButtonPurple("Navigate")
         ],
       );
 

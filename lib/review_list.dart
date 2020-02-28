@@ -7,7 +7,8 @@ class ReviewList extends StatelessWidget{
 
     final title = Container(
       margin: EdgeInsets.only(
-        left: 20.0
+        left: 20.0,
+        top: 20.0
       ),
       child: Text(
         "All reviwes",
